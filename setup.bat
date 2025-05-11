@@ -1,15 +1,13 @@
 @echo off
-REM Crear entorno virtual
+echo Creando entorno virtual...
 python -m venv venv
 
-REM Activar entorno virtual
+echo Activando entorno virtual...
 call venv\Scripts\activate
 
-REM Instalar dependencias
-pip install requests beautifulsoup4 ollama
+echo Instalando dependencias...
+pip install --upgrade pip
+pip install -r requirements.txt
 
-REM Guardar lista de dependencias
-pip freeze > requirements.txt
-
-echo Entorno virtual configurado y dependencias instaladas.
+echo Instalación completada.
 pause
