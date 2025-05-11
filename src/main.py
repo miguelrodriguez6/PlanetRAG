@@ -20,7 +20,7 @@ def preguntar_planetas():
     rag = RAGSystem("summary/planets.txt")
 
     while True:
-        pregunta = input("Haz una pregunta sobre los planetas (o escribe 'stop' para salir): ")
+        pregunta = input("\nHaz una pregunta sobre los planetas (o escribe 'stop' para salir): ")
         if pregunta.lower() == "stop":
             print("Saliendo...")
             break
