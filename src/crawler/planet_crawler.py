@@ -3,10 +3,10 @@ import re
 import requests
 from bs4 import BeautifulSoup
 import ollama
+from src.config import LANGUAGE_MODEL
 
 
 class PlanetCrawler:
-    LANGUAGE_MODEL = 'hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF'
 
     def __init__(self, base_url="https://es.wikipedia.org/wiki/", max_planets=8):
         """
@@ -140,7 +140,7 @@ class PlanetCrawler:
 
         # Realiza la llamada al modelo en modo streaming
         stream = ollama.chat(
-            model=self.LANGUAGE_MODEL,
+            model=LANGUAGE_MODEL,
             messages=[{'role': 'user', 'content': prompt}],
             stream=True,
         )
