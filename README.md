@@ -50,6 +50,12 @@ ollama
 
 > Ambos scripts crean un entorno virtual e instalan automáticamente las dependencias listadas en `requirements.txt`.
 
+También es necesaria la instalación de los modelos de lenguaje tras la instalación del programa de Ollama de la página web: https://ollama.com/. Los modelos se instalan ejecutando los siguientes comandos:
+
+> ollama pull hf.co/CompendiumLabs/bge-base-en-v1.5-gguf
+> 
+> ollama pull hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF
+
 ---
 
 ## 🚀 Ejecución
@@ -90,5 +96,7 @@ stop
 | Lenguaje        | `hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF`                        |
 
 > Ambos modelos funcionan localmente a través de [Ollama](https://ollama.com/).
+
+Para utilizar un modelo diferente simplemente es necesario instalarlo. Por ejemplo, si queremos utilizar una versión diferente del modelo de lenguaje podríamos hacer el mismo proceso de instalación (```ollama pull ...```) y cambiar la URI en los archivos de python por ```hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF```.
 
 ---
