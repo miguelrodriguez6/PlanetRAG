@@ -97,6 +97,6 @@ stop
 
 > Ambos modelos funcionan localmente a través de [Ollama](https://ollama.com/).
 
-Para utilizar un modelo diferente simplemente es necesario instalarlo. Por ejemplo, si queremos utilizar una versión diferente del modelo de lenguaje podríamos hacer el mismo proceso de instalación (```ollama pull ...```) y cambiar la URI en los archivos de python por ```hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF```.
+Para utilizar un modelo diferente simplemente es necesario instalarlo. Por ejemplo, si queremos utilizar una versión diferente del modelo de lenguaje podríamos hacer el mismo proceso de instalación (```ollama pull ...```) y cambiar la URI en los archivos de configuración por ```hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF```.
 
 ---
